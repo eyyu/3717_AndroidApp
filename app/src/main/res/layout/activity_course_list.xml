@@ -10,4 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.comp3711.eva.a3717_a1.CourseList">
 
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:textColor="@color/bcit_white"
+        android:background="@color/bcit_drkBlue"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:background="@color/bcit_drkBlue"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
+
 </RelativeLayout>

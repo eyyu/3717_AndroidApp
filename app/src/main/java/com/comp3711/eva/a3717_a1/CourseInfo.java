@@ -1,5 +1,6 @@
 package com.comp3711.eva.a3717_a1;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -20,7 +21,6 @@ public class CourseInfo extends AppCompatActivity {
 
         titleTextView.setText( course.getCourseTitle() );
         blurbTextView.setText( course.getCourseBlurb() );
-
 
     }
 

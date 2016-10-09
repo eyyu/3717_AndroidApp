@@ -3,20 +3,21 @@
     android:id="@+id/activity_term_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/bcit_white">
 
     <TextView
         android:id="@+id/output"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Click:"
-        android:padding="1px"
-        android:textColor="#FFFFFF"
-        android:background="#000000"/>
+        android:padding="10px"
+        android:textColor="@color/bcit_white"
+        android:background="@color/bcit_drkBlue"/>
+
 
     <ListView
         android:id="@android:id/list"
-        android:background="#80A7B3"
+        android:background="@color/bcit_drkBlue"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
     </ListView>

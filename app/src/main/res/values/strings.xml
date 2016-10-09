@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">3717_A1</string>
     <string name="title_activity_course_list">CourseList</string>
+    <color name="bcit_white">#efebf1</color>
+    <color name="bcit_drkBlue">#04568B</color>
+    <color name="bcit_lghtBlue">#39C0AA</color>
+    <color name="bcit_drkGreen">#60A432</color>
+    <color name="bcit_lghtGreen">#95BC4C</color>
 </resources>
