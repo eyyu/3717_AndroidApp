@@ -48,12 +48,11 @@ public class TermList extends ListActivity{
     protected void onListItemClick(ListView listView, View v, int pos, long id)
     {
         super.onListItemClick(listView, v, pos, id);
-        int itemPosition = pos;
         String itemValue = (String) listView.getItemAtPosition(pos);
         // For testing only!
 
         content.setText("Click: \n Position: "
-                + itemPosition
+                + pos
                 + "\nListItem:" + itemValue);
 
         Intent intent = new Intent(this, CourseList.class);

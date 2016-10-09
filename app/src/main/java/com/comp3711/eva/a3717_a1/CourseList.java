@@ -1,6 +1,7 @@
 package com.comp3711.eva.a3717_a1;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -58,6 +59,10 @@ public class CourseList extends ListActivity {
     protected void onListItemClick(ListView listView, View v, int pos, long id) {
         super.onListItemClick(listView, v, pos, id);
 
+        Intent intent = new Intent(this, CourseInfo.class);
+        intent.putExtra("SelectedDataCommCourse", DCCourse_List.get(pos));
+        startActivity(intent);
+
     }
 
     public ArrayList<DataCommCourse> loadJSONFromAsset(int termNo) {
@@ -79,7 +84,6 @@ public class CourseList extends ListActivity {
         try {
             JSONArray jsonTermsCoursesArr = new JSONArray(json);
             JSONObject obj = jsonTermsCoursesArr.getJSONObject(termNo - 1);
-
             JSONArray m_jArray = obj.getJSONArray(termKey);
 
             for (int i = 0; i < m_jArray.length(); i++) {

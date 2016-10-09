@@ -10,4 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.comp3711.eva.a3717_a1.CourseInfo">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:id="@+id/blurb_text"
+        android:text="blurb"
+        android:layout_below="@+id/title_text"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:text="title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
 </RelativeLayout>
