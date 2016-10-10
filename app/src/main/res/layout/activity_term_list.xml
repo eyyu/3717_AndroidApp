@@ -4,22 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/bcit_white">
+    android:background="@color/darkred">
 
     <TextView
-        android:id="@+id/output"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10px"
+        android:id="@+id/blurb_text"
+        android:fontFamily="monospace"
+        android:typeface="sans"
         android:textColor="@color/bcit_white"
-        android:background="@color/bcit_drkBlue"/>
+        android:background="@android:color/transparent"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        android:text="CST Terms"
+        android:paddingTop="10dp"
+        android:layout_margin="10dp" />
 
 
     <ListView
         android:id="@android:id/list"
-        android:background="@color/bcit_drkBlue"
+        android:background="@color/purplight"
+        android:textColor="@color/bcit_white"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_margin="10dp">
     </ListView>
 
 </LinearLayout>

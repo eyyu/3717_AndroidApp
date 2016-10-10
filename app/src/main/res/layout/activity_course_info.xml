@@ -8,38 +8,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/bcit_drkBlue"
+    android:background="@color/darkred"
     tools:context="com.comp3711.eva.a3717_a1.CourseInfo">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
         android:id="@+id/blurb_text"
         android:text="blurb"
         android:layout_below="@+id/title_text"
         android:layout_centerHorizontal="true"
         android:fontFamily="monospace"
-        android:typeface="sans"
         android:textColor="@color/bcit_white"
-        android:background="@color/bcit_drkBlue"
-        android:textSize="18sp"
-        android:textStyle="normal|bold" />
+        android:background="@color/purplight"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbarDefaultDelayBeforeFade="0"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="0dp"
+        android:scrollIndicators="none" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/title_text"
         android:text="title"
         android:layout_alignParentTop="true"
-        android:background="@color/bcit_drkBlue"
+        android:background="@android:color/transparent"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@color/bcit_white"
         android:fontFamily="serif-monospace"
         android:typeface="sans"
-        android:textSize="40sp"
+        android:textSize="36sp"
         android:textStyle="normal|bold"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_margin="10dp" />
 
 </RelativeLayout>

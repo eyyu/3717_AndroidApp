@@ -1,5 +1,17 @@
 package com.comp3711.eva.a3717_a1;
 
+/**
+ * COURSE LIST ACTIVITY CLASS
+ * @author Eva YU
+ * @version 1.0
+ * Date: 10/7/2016.
+ *
+ * This activity takes the DataCommTerm object generated from
+ * the previous activity and generates a list of courses
+ * that corresponds to the term selected. The information
+ * is generated from a local JSON file
+ *
+ */
 import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
@@ -7,7 +19,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -55,6 +66,14 @@ public class CourseList extends ListActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
+    /**
+     * The Action that will bring user to CourseInfo Activity
+     *
+     * @param listView the list view
+     * @param v        the view selected
+     * @param pos      the position of the list clicked
+     * @param id       the id as required by the parent class
+     */
     @Override
     protected void onListItemClick(ListView listView, View v, int pos, long id) {
         super.onListItemClick(listView, v, pos, id);
@@ -65,6 +84,15 @@ public class CourseList extends ListActivity {
 
     }
 
+    /**
+     * JASON formatter for static json file in assets folder
+     * Will parse the json object to set the array list of course info
+     * objects relating to the term
+     *
+     * @param termNo    the term selected
+     * @return  an array list of DataCommCourses
+     *
+     */
     public ArrayList<DataCommCourse> loadJSONFromAsset(int termNo) {
         String termKey = "term" + termNo;
         DCCourse_List = new ArrayList<>();

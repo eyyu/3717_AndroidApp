@@ -4,10 +4,20 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by Eva on 10/7/2016.
+ *
+ * DATA COMM TERM CLASS.
+ * @author Eva YU
+ * @version 1.0
+ * Date: 10/7/2016.
+ *
+ *
+ * This class represents a single term in the datacomm option
+ * of CST and contains the information of the term number
+ * and an array of courses this term has
  */
 
 public class DataCommTerm implements Serializable {
+
     /**
      * The contructor for this class
      * @param t  int representing the term value in the array (t - 1)
@@ -31,12 +41,9 @@ public class DataCommTerm implements Serializable {
         termCourseList.add(course);
     }
 
-    private static final int COURSES_PER_TERM = 7;
-
-    private int                         termNo;
-    private String                      termStr;
-    private ArrayList<DataCommCourse>   termCourseList;
-
-
+    private int                         termNo; // The term (1 -4)
+    private String                      termStr; // the string that titles of the course
+    private ArrayList<DataCommCourse>   termCourseList; // the list of DataComm Course objects
+                                                        // in the term
 
 }

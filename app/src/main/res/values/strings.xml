@@ -2,8 +2,13 @@
     <string name="app_name">3717_A1</string>
     <string name="title_activity_course_list">CourseList</string>
     <color name="bcit_white">#efebf1</color>
-    <color name="bcit_drkBlue">#04568B</color>
-    <color name="bcit_lghtBlue">#39C0AA</color>
-    <color name="bcit_drkGreen">#60A432</color>
+    <color name="bcit_drkBlue">#04568b</color>
+    <color name="bcit_lghtBlue">#39c0aa</color>
+    <color name="bcit_drkGreen">#60a432</color>
     <color name="bcit_lghtGreen">#95BC4C</color>
+    <color name="darkBlue">#092d44</color>
+    <color name="purp">#5a6aa1</color>
+    <color name="purplight">#481419</color>
+    <color name="purptext">#382c3e</color>
+    <color name="darkred">#310a0d</color>
 </resources>
